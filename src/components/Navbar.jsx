@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     return (
-        <div className="navbar bg-primary text-primary-content shadow-sm">
+        <div className="navbar bg-primary text-primary-content ">
 
             <div className="navbar-start">
                 <div className="dropdown">
@@ -12,7 +12,7 @@ const Navbar = () => {
                     </div>
                     <ul
                         tabIndex={0}
-                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        className="menu menu-sm dropdown-content bg-primary rounded-box z-1 mt-3 w-52 p-2 shadow">
                         <li><a><Link to={''}>Home</Link></a></li>
                         <li><a><Link to={'about'}>About</Link></a></li>
                         <li><a><Link to={'contact'}>Contact</Link></a></li>
@@ -42,12 +42,12 @@ const Navbar = () => {
                     </div>
                     <div
                         tabIndex={0}
-                        className="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow">
+                        className="card card-compact dropdown-content bg-primary z-1 mt-3 w-52 shadow">
                         <div className="card-body">
                             <span className="text-lg font-bold">{0} Items</span>
                             <span className="text-info">Subtotal: ${1}</span>
                             <div className="card-actions">
-                                <button className="btn btn-primary btn-block">View cart</button>
+                                <button className="btn btn-bg-100 btn-block">View cart</button>
                             </div>
                         </div>
                     </div>
@@ -63,7 +63,7 @@ const Navbar = () => {
                     </div>
                     <ul
                         tabIndex={0}
-                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        className="menu menu-sm dropdown-content bg-primary rounded-box z-1 mt-3 w-52 p-2 shadow">
                         <li>
                             <a className="justify-between">
                                 Profile
