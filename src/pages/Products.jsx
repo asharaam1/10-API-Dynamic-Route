@@ -16,13 +16,13 @@ const Products = () => {
   }
 
   return (
-    <div >
+    <div className="flex flex-wrap gap-6 justify-center pt-9">
       {data.products.map((item) => {
         return (
           <Card
             key={item.id}
-            title={item.title}
-            description={item.description}
+            title={item.title.split(" ").slice(0, 3).join(" ")}
+            description={item.description.slice(0, 50) + "..."}
             image={item.thumbnail}
             id={item.id}
           />
